@@ -1,0 +1,21 @@
+{
+  "sponsor": {
+    "brand": "Nombre de la marca",
+    "text": "Texto corto del sponsor.",
+    "cta": "Conocer más",
+    "url": "https://marca-ejemplo.com",
+    "image": "https://USUARIO.github.io/sponsor/logo.png"
+  },
+  "allow": ["marca-ejemplo.com"],
+  "entry": {
+    "brand": "Otra marca",
+    "text": "Anuncio que aparece al entrar a Apoyo.",
+    "url": "https://marca-ejemplo.com/oferta"
+  },
+  "inline": {
+    "brand": "Otra marca más",
+    "text": "Anuncio dentro de la pantalla Apoyo.",
+    "url": "https://marca-ejemplo.com"
+  },
+  "rewarded": { "type": "admob", "adId": "ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY" }
+}
