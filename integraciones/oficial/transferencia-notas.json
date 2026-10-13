@@ -1,0 +1,66 @@
+{
+  "id": "transferencia-notas",
+  "name": "Transferencia de notas",
+  "ver": 1,
+  "offline": true,
+  "desc": "Pasá tus notas de otras apps a NIVA, ordenadas.",
+  "sources": [
+    {
+      "name": "Google Keep",
+      "desc": "Pasá tus notas de Google Keep (exportadas con Google Takeout).",
+      "accept": ".zip,.json",
+      "type": "json",
+      "items": "",
+      "dateUnit": "usec",
+      "help": [
+        "Entrá a takeout.google.com con tu cuenta de Google.",
+        "Tocá 'Anular selección' y marcá solo 'Keep'.",
+        "Creá la exportación y descargá el archivo .zip.",
+        "Elegilo acá abajo: no hace falta descomprimirlo."
+      ],
+      "map": {
+        "title": "title",
+        "body": "textContent",
+        "labels": "labels.*.name",
+        "date": "userEditedTimestampUsec",
+        "trashed": "isTrashed",
+        "list": {
+          "path": "listContent",
+          "text": "text",
+          "checked": "isChecked"
+        }
+      },
+      "key": "google-keep"
+    },
+    {
+      "name": "Archivos de texto y Markdown",
+      "desc": "Notas en .txt, .md o .html. Si están en carpetas dentro de un .zip, se pasan ordenadas en carpetas.",
+      "accept": ".zip,.txt,.md,.markdown,.html,.htm",
+      "type": "text",
+      "folders": "path",
+      "help": [
+        "Exportá tus notas desde la otra app como archivos de texto, Markdown o HTML.",
+        "Sirve para Obsidian, Joplin, Notion, Simplenote y similares.",
+        "Elegí los archivos sueltos o un .zip con carpetas."
+      ],
+      "key": "texto-y-markdown"
+    },
+    {
+      "name": "Tabla CSV",
+      "desc": "Notas exportadas en una tabla CSV con las columnas Title, Content y Folder.",
+      "accept": ".csv",
+      "type": "csv",
+      "help": [
+        "Exportá tus notas en un archivo .csv.",
+        "La primera fila debe tener los nombres de columna: Title, Content y (opcional) Folder.",
+        "Elegí el archivo acá abajo."
+      ],
+      "map": {
+        "title": "Title",
+        "body": "Content",
+        "folder": "Folder"
+      },
+      "key": "csv-generico"
+    }
+  ]
+}

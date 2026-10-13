@@ -1,0 +1,14 @@
+{
+  "oficial": [
+    {
+      "id": "transferencia-notas",
+      "name": "Transferencia de notas",
+      "ver": 1,
+      "desc": "Pasá tus notas de otras apps a NIVA, ordenadas.",
+      "offline": true,
+      "file": "oficial/transferencia-notas.json",
+      "sha256": "ae1b363065217614560fdd10a93e2e3a6e8d679ecc6f823f0158ab839170a6bd"
+    }
+  ],
+  "comunidad": []
+}
